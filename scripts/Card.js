@@ -1,6 +1,7 @@
 // KLASA KANBAN CARD
 function Card(id, name) {
   var self = this;
+
   this.id = id;
   this.name = name || 'No name given';
   this.element = createCard();
@@ -18,8 +19,7 @@ function Card(id, name) {
     cardDescription.text(self.name);
     card.append(cardDescription);
     return card;
-  };
-  
+  }
 };
 Card.prototype = {
   removeCard: function() {
