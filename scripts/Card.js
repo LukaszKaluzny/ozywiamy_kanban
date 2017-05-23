@@ -13,12 +13,14 @@ function Card(id, name) {
     cardDeleteBtn.click(function(){
       self.removeCard();
     });
-    
+    console.log(123);
     card.append(cardDeleteBtn);
     cardDescription.text(self.name);
-    card.append(cardDescription)
+    card.append(cardDescription);
+    return card;
+    console.log(123)
   };
-  return card;
+  
 };
 Card.prototype = {
   removeCard: function() {
