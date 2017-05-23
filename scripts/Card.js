@@ -17,8 +17,8 @@ function Card(description) {
     card.append(cardDeleteBtn);
     cardDescription.text(self.name);
     card.append(cardDescription)
-    return card;
   };
+  return card;
 };
 Card.prototype = {
   removeCard: function() {
