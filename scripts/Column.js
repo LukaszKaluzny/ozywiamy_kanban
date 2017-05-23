@@ -34,16 +34,19 @@ function Column(id, name) {
           self.createCard(card);
         }
       });
-    
-      // KONSTRUOWANIE ELEMENTU KOLUMNY
+    });
+
+// KONSTRUOWANIE ELEMENTU KOLUMNY
       column.append(columnTitle)
       .append(columnDelete)
       .append(columnAddCard)
       .append(columnCardList);
       return column;
-    });
 
-    Column.prototype = {
+    
+}
+}
+Column.prototype = {
       createCard: function(card) {
       this.element.children('ul').append(card.element);
     },
@@ -59,6 +62,3 @@ function Column(id, name) {
       });
     }
   }
-}
-};
- 
